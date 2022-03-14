@@ -1,4 +1,10 @@
 def happy_new_year
+  i = 10;
+  while i > 0 
+    puts i
+    i -= 1
+  end
+  puts "Happy New Year!"
   # your code here
 end
 
@@ -16,9 +22,17 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
-  # your code here
+  100.times do |i|
+    puts fizzbuzz(i)
+  end
 end
 
 def reverse_string(str)
-  # your code here
+  reverse = ""
+  i = str.length - 1
+  while i >= 0
+    reverse += str.byteslice(i)
+    i -= 1
+  end
+  reverse
 end
